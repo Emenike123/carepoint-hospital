@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment | CarePoint Hospital</title>
+  <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="hospital.html" class="logo">
+      CarePoint<span>+</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="navMenu">
+      <a href="hospital.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="departments.html">Departments</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="services.html">Services</a>
+      <a href="appointment.html">Appointment</a>
+    </nav>
+
+    <a href="appointment.html" class="nav-button">Book Now</a>
+  </header>
+
+  <main class="appointment-page">
+
+    <section class="appointment-heading">
+      <p class="section-label">YOUR HEALTH MATTERS</p>
+      <h1>Book an Appointment</h1>
+      <p>
+        Schedule a visit with our healthcare team.
+        Complete the form below to request an appointment.
+      </p>
+    </section>
+
+    <section class="appointment-layout">
+
+      <div class="appointment-info">
+        <h2>We're Here for You</h2>
+        <p>
+          Your health and comfort are important to us.
+          Share your details and preferred appointment time
+          so our team can review your request.
+        </p>
+
+        <div class="appointment-info-item">
+          <span>📍</span>
+          <div>
+            <h3>Our Location</h3>
+            <p>Owerri, Imo State, Nigeria</p>
+          </div>
+        </div>
+
+        <div class="appointment-info-item">
+          <span>📞</span>
+          <div>
+            <h3>Contact Us</h3>
+            <p>+234 800 000 0000</p>
+          </div>
+        </div>
+
+        <div class="appointment-info-item">
+          <span>🕒</span>
+          <div>
+            <h3>Opening Hours</h3>
+            <p>Open 24 hours</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="appointment-form" id="appointmentForm">
+
+        <h2>Appointment Details</h2>
+        <p class="form-intro">Fields marked * are required.</p>
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName"
+              placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email"
+              placeholder="you@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone"
+              placeholder="Enter your phone number"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department *</label>
+            <select id="department" name="department" required>
+              <option value="">Select a department</option>
+              <option value="General Consultation">General Consultation</option>
+              <option value="Cardiology">Cardiology</option>
+              <option value="Pediatrics">Pediatrics</option>
+              <option value="Laboratory Services">Laboratory Services</option>
+              <option value="Dental Care">Dental Care</option>
+              <option value="Emergency Care">Emergency Care</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="appointmentDate">Preferred Date *</label>
+            <input type="date" id="appointmentDate"
+              name="appointmentDate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="appointmentTime">Preferred Time *</label>
+            <select id="appointmentTime" name="appointmentTime" required>
+              <option value="">Select a time</option>
+              <option value="Morning">Morning (8 AM – 12 PM)</option>
+              <option value="Afternoon">Afternoon (12 PM – 4 PM)</option>
+              <option value="Evening">Evening (4 PM – 8 PM)</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="reason">Reason for Visit</label>
+            <textarea id="reason" name="reason" rows="4"
+              placeholder="Briefly describe the reason for your visit (optional)"></textarea>
+          </div>
+
+        </div>
+
+        <button type="submit" class="appointment-submit">
+          Request Appointment
+        </button>
+
+        <p id="formMessage" class="form-message"
+          role="status" aria-live="polite"></p>
+
+        <p class="form-note">
+          This demonstration form does not send or save your details.
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>
+        &copy; <span id="currentYear"></span> CarePoint Hospital.
+        All rights reserved.
+      </p>
+      <p>Designed with care for your health.</p>
+    </div>
+  </footer>
+
+  <script src="hospital.js"></script>
+</body>
+</html>

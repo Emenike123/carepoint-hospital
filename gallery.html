@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | CarePoint Hospital</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="hospital.html" class="logo">CarePoint Hospital</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav id="navMenu">
+        <a href="hospital.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="departments.html">Departments</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="appointment.html" class="nav-button">Book Now</a>
+</header>
+
+<main>
+
+    <section class="gallery-hero">
+        <p>A LOOK INSIDE CAREPOINT</p>
+        <h1>Our Hospital Gallery</h1>
+        <span>Discover our facilities, medical team and caring environment.</span>
+    </section>
+
+    <section class="gallery-intro">
+        <p class="section-label">OUR ENVIRONMENT</p>
+        <h2>A Place Built Around Your Care</h2>
+        <p>
+            Take a look at our hospital environment, facilities and the
+            people dedicated to providing quality healthcare.
+            Click any image to view it in a larger size.
+        </p>
+    </section>
+
+    <section class="gallery-section">
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="hospitalimg/building.jpg"
+                     alt="CarePoint Hospital building" class="gallery-image">
+                <div class="gallery-caption">Our Hospital</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="hospitalimg/reception.jpg"
+                     alt="Hospital reception area" class="gallery-image">
+                <div class="gallery-caption">Reception Area</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="hospitalimg/team.jpg"
+                     alt="Hospital medical team" class="gallery-image">
+                <div class="gallery-caption">Our Medical Team</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="hospitalimg/consultation.jpg"
+                     alt="Doctor consulting a patient" class="gallery-image">
+                <div class="gallery-caption">Patient Consultation</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="hospitalimg/laboratory.jpg"
+                     alt="Medical laboratory" class="gallery-image">
+                <div class="gallery-caption">Laboratory</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="hospitalimg/patient-care.jpg"
+                     alt="Healthcare professional caring for a patient" class="gallery-image">
+                <div class="gallery-caption">Patient Care</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- IMAGE LIGHTBOX -->
+    <div class="lightbox" id="lightbox" role="dialog"
+         aria-modal="true" aria-label="Enlarged gallery image" hidden>
+
+        <button class="lightbox-close" id="lightboxClose"
+                aria-label="Close image">&times;</button>
+
+        <img src="" alt="" id="lightboxImage">
+        <p id="lightboxCaption"></p>
+    </div>
+
+    <section class="gallery-cta">
+        <h2>Experience CarePoint Hospital</h2>
+        <p>We look forward to welcoming you.</p>
+        <a href="appointment.html">Book an Appointment</a>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; <span id="currentYear"></span> CarePoint Hospital. All rights reserved.</p>
+</footer>
+
+<script src="hospital.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors | CarePoint Hospital</title>
+    <link rel="stylesheet" href="hospital.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="hospital.html" class="logo">CarePoint Hospital</a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav id="navMenu">
+        <a href="hospital.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="departments.html">Departments</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="appointment.html" class="nav-button">Book Now</a>
+</header>
+
+<main>
+    <section class="doctors-hero">
+        <p>MEET OUR MEDICAL TEAM</p>
+        <h1>Our Experienced Doctors</h1>
+        <span>Dedicated professionals committed to your health and wellbeing.</span>
+    </section>
+
+    <section class="doctors-intro">
+        <p class="section-label">OUR SPECIALISTS</p>
+        <h2>Meet the People Behind Your Care</h2>
+        <p>
+            Our medical team is made up of dedicated professionals across
+            different specialties, working together to provide compassionate
+            and patient-centred healthcare.
+        </p>
+    </section>
+
+    <section class="doctors-section">
+
+        <div class="doctor-search">
+            <input type="text" id="doctorSearch"
+                placeholder="Search by doctor's name or specialty..."
+                aria-label="Search doctors">
+        </div>
+
+        <div class="doctors-grid" id="doctorsGrid">
+
+            <article class="doctor-card" data-name="Dr. James Wilson" data-specialty="Cardiologist">
+                <div class="doctor-avatar">JW</div>
+                <div class="doctor-info">
+                    <h3>Dr. James Wilson</h3>
+                    <p class="doctor-specialty">Cardiologist</p>
+                    <p>Specializes in heart health, cardiovascular diagnosis and treatment.</p>
+                    <span class="doctor-experience">12 Years Experience</span>
+                    <a href="appointment.html">Book Appointment</a>
+                </div>
+            </article>
+
+            <article class="doctor-card" data-name="Dr. Adam Johnson" data-specialty="Pediatrician">
+                <div class="doctor-avatar">AJ</div>
+                <div class="doctor-info">
+                    <h3>Dr. Adam Johnson</h3>
+                    <p class="doctor-specialty">Pediatrician</p>
+                    <p>Dedicated to children's health, development and preventive care.</p>
+                    <span class="doctor-experience">9 Years Experience</span>
+                    <a href="appointment.html">Book Appointment</a>
+                </div>
+            </article>
+
+            <article class="doctor-card" data-name="Dr. Michael Brown" data-specialty="Neurologist">
+                <div class="doctor-avatar">MB</div>
+                <div class="doctor-info">
+                    <h3>Dr. Michael Brown</h3>
+                    <p class="doctor-specialty">Neurologist</p>
+                    <p>Focuses on conditions affecting the brain and nervous system.</p>
+                    <span class="doctor-experience">11 Years Experience</span>
+                    <a href="appointment.html">Book Appointment</a>
+                </div>
+            </article>
+
+            <article class="doctor-card" data-name="Dr. Emily Davis" data-specialty="Gynecologist">
+                <div class="doctor-avatar">ED</div>
+                <div class="doctor-info">
+                    <h3>Dr. Emily Davis</h3>
+                    <p class="doctor-specialty">Gynecologist</p>
+                    <p>Provides women's health, reproductive and maternity-related care.</p>
+                    <span class="doctor-experience">10 Years Experience</span>
+                    <a href="appointment.html">Book Appointment</a>
+                </div>
+            </article>
+
+            <article class="doctor-card" data-name="Dr. Daniel Smith" data-specialty="Orthopedic Surgeon">
+                <div class="doctor-avatar">DS</div>
+                <div class="doctor-info">
+                    <h3>Dr. Daniel Smith</h3>
+                    <p class="doctor-specialty">Orthopedic Surgeon</p>
+                    <p>Specializes in bone, joint and musculoskeletal conditions.</p>
+                    <span class="doctor-experience">14 Years Experience</span>
+                    <a href="appointment.html">Book Appointment</a>
+                </div>
+            </article>
+
+            <article class="doctor-card" data-name="Dr. Olivia Taylor" data-specialty="General Physician">
+                <div class="doctor-avatar">OT</div>
+                <div class="doctor-info">
+                    <h3>Dr. Olivia Taylor</h3>
+                    <p class="doctor-specialty">General Physician</p>
+                    <p>Provides general consultations, health assessments and primary care.</p>
+                    <span class="doctor-experience">8 Years Experience</span>
+                    <a href="appointment.html">Book Appointment</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="doctorNoResults" class="doctor-no-results" hidden>
+            No doctors found. Try another name or specialty.
+        </p>
+    </section>
+
+    <section class="doctors-cta">
+        <h2>Your Health Deserves Expert Attention</h2>
+        <p>Schedule a consultation with our medical team today.</p>
+        <a href="appointment.html">Book an Appointment</a>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; <span id="currentYear"></span> CarePoint Hospital. All rights reserved.</p>
+</footer>
+
+<script src="hospital.js"></script>
+</body>
+</html>

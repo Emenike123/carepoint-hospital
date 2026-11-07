@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | CarePoint Hospital</title>
+    <link rel="stylesheet" href="hospital.css">
+    <script src="hospital.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="hospital.html" class="logo">CarePoint Hospital</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+        <nav id="navMenu">
+            <a href="hospital.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="departments.html">Departments</a>
+            <a href="doctors.html">Doctors</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+
+        <a href="appointment.html" class="nav-button">Book Now</a>
+    </header>
+
+    <section class="contact-hero">
+        <div>
+            <p class="section-tag">WE'RE HERE FOR YOU</p>
+            <h1>Get in Touch With Us</h1>
+            <p>Have a question or need assistance? Our team is ready to help you.</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-heading">
+            <h2>Contact Information</h2>
+            <p>Reach out to us through any of the channels below.</p>
+        </div>
+
+        <div class="contact-layout">
+
+            <div class="contact-details">
+
+                <div class="contact-card">
+                    <span>📍</span>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>Owerri, Imo State, Nigeria</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span>📞</span>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <p>+234 800 000 0000</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span>✉️</span>
+                    <div>
+                        <h3>Email Address</h3>
+                        <p>info@carepointhospital.example</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <span>🕒</span>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Monday – Sunday</p>
+                        <p>Open 24 Hours (Emergency Care)</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and we'll be happy to hear from you.</p>
+
+                <form id="contactForm">
+
+                    <label for="contactName">Full Name</label>
+                    <input type="text" id="contactName" placeholder="Enter your full name" required>
+
+                    <label for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" placeholder="Enter your email" required>
+
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" placeholder="What is your message about?" required>
+
+                    <label for="contactMessage">Your Message</label>
+                    <textarea id="contactMessage" rows="5" placeholder="Write your message here..." required></textarea>
+
+                    <button type="submit" class="contact-submit">Send Message</button>
+
+                    <p id="contactMessageStatus" role="status"></p>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact-bottom">
+        <h2>Your Health Matters to Us</h2>
+        <p>At CarePoint Hospital, we're committed to providing compassionate care and support whenever you need it.</p>
+        <a href="appointment.html" class="contact-appointment-btn">Book an Appointment</a>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; <span id="currentYear"></span> CarePoint Hospital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
